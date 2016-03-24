@@ -10,6 +10,8 @@
     <meta name="author" content="Blockchain Inspector">
     <title>BlockchainInspector | Fight fraud in the blockchain.</title>
 
+    <!-- Popup -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" />
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
 
@@ -331,6 +333,29 @@
     <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script> 
     <script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
     <script type="text/javascript" src="assets/js/jquery-func.js"></script>
+
+    <!-- Popup -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script>
+    toastr.options = {
+      "closeButton": true,
+      "debug": false,
+      "newestOnTop": true,
+      "progressBar": true,
+      "positionClass": "toast-bottom-right",
+      "preventDuplicates": false,
+      "onclick": null,
+      "showDuration": "300",
+      "hideDuration": "1000",
+      "timeOut": "30000",
+      "extendedTimeOut": "1000",
+      "showEasing": "swing",
+      "hideEasing": "linear",
+      "showMethod": "fadeIn",
+      "hideMethod": "fadeOut"
+    }
+	toastr["info"]('<a href="https://medium.com/@bci_corporate/blockchain-inspector-partners-with-uk-bitcoin-marketplace-177a47a18e56#" target="bci_first_partnership">Blockchain Inspector partners with UK Bitcoin marketplace<a>', '<b>First partnership signed !</b>');
+    </script>
 
     <!-- Google analytics -->
     <script>
