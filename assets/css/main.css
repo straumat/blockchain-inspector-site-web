@@ -6,6 +6,8 @@ body {
 	line-height: 1.4;
 }
 
+.hiddenpinimage { opacity: 0; position: absolute; top: 0; left: 0; height: 0px; width: 0px; }
+
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
