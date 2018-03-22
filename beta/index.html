@@ -60,7 +60,7 @@
                 <!-- Left menu -->
                 <div class="col-md-5">
                     <h1>Blockchain Inspector</h1>
-                    <p class="lead mt-5 mb-8">Thanks to our own Artificial Intelligence engine, we allow you to profile bitcoin users. The key advantage of our solution is that it allows for human reasoning to be integrated and in so doing can transpose the experience of experts into a AI.</p>
+                    <p class="lead mt-5 mb-8">Thanks to our own 10 years old Artificial Intelligence engine, we allow you to profile bitcoin users. The key advantage of our solution is that it can easily translates human reasoning into rules that will be executed against the blockchain by our AI.</p>
                     <a class="btn btn-round btn-light w-150 ml-3" href="#howItWorks">Learn more</a>
                     <a class="btn btn-round btn-outline-light w-150" href="mailto:hello@blockchaininspector.com">Contact us</a>
                 </div>
@@ -83,32 +83,49 @@
         <section class="section">
             <div class="container" id="howItWorks">
                 
+                <!-- Title -->
                 <header class="section-header">
                     <h2>How it works</h2>
-                    <p class="lead">Holisticly implement fully tested process improvements rather than dynamic internal.</p>
+                    <p class="lead">Our AI tool is being developed for more than 10 years and already used by french railroad SNCF to simulate crows or french car maker Peugeot for its autonomous car</p>
                 </header>
                 
+                <!-- Blockchain2graph -->
                 <div class="row gap-y align-items-center">
                     <div class="col-md-6 ml-auto">
-                        <h4>Getting Started page</h4>
-                        <p>As part of efforts to improve user onboarding, I shipped an experiment to a subset of new users showing them a Getting Started page immediately after signup to help them get to what we think are some of the most important actions for new users to take. We compared the subset of users against a control group to see whether such an experience improved engagement over a period of time.</p>
+                        <h4>Extract Bitcoin data</h4>
+                        <p>Our first tool (open source) <a href="https://github.com/straumat/blockchain2graph" target="blockchain2graph">blockchain2graph</a> extracts data from a <a href="https://github.com/bitcoin/bitcoin" target="bitcoin-core">bitcoin core</a> server and stores them in a neo4j database.</p>
                     </div>
 
                     <div class="col-md-5 order-md-first">
-                        <img class="rounded shadow-2" src="assets/img/preview/dribbble-6.png" alt="...">
+                        <img class="rounded shadow-2" src="assets/img/screenshots/neo4j.png" alt="neo4j">
                     </div>
                 </div>
 
                 <hr class="my-8">
 
+                <!-- Rules creation -->
                 <div class="row gap-y align-items-center">
                     <div class="col-md-6 mr-auto">
-                        <h4>Outdated comments toggling</h4>
-                        <p>Last week we shipped outdated comments...well, brought them back, actually. We used to show collapsed comments on outdated diffs as a single line, but removed that when we shipped code review recently. We brought that back last week with an improvement: you can now toggle open threads on outdated diffs in a review individually.</p>
+                        <h4>Create rules</h4>
+                        <p>Each rule can be created individually and enables the step-by-step creation of a complex analysis system. The system uses fuzzy logic to handle the concept of partial truth, where the truth value may range between completely true and completely false.</p>
                     </div>
                     
                     <div class="col-md-5">
-                        <img class="rounded shadow-2" src="assets/img/preview/dribbble-7.png" alt="...">
+                        <img class="rounded shadow-2" src="assets/img/screenshots/ia-studio.png" alt="...">
+                    </div>
+                </div>
+                
+                <hr class="my-8">
+                
+                <!-- Visualisation -->
+                <div class="row gap-y align-items-center">
+                    <div class="col-md-6 ml-auto">
+                        <h4>View data</h4>
+                        <p>Our user interface (work in progress) allows you to search for peoples, companies, bitcoin addresses and transactions and see what data you have and what the Artifcial intelligence has added.</p>
+                    </div>
+
+                    <div class="col-md-5 order-md-first">
+                        <img class="rounded shadow-2" src="assets/img/screenshots/address_detail.png" alt="neo4j">
                     </div>
                 </div>
                 
@@ -132,89 +149,86 @@
         <!-- Proof of concept -->
         <section class="section bg-gray">
             <div class="container" id="proofOfConcept">
-                
                 <header class="section-header">
-                    <h2>Proof of concept</h2>
-                    <p class="lead">We waited until we could do it right. Then we did! Instead of creating a carbon copy.</p>
+                    <h2><strong>Proof of concept</strong></h2>
+                    <p class="lead-2">We released a technical proof of concept : it contains a neo4j database with 70 000 blocks, blockchain2graph, our Artificial Intelligence engine and some rules written in C++ (no GUI tool for the moment). Feel free to learn and try !</p>
                 </header>
-
-                <div class="row gap-y align-items-center">
-                    <div class="col-md-6 ml-auto">
-                        <h4>Getting Started page</h4>
-                        <p>As part of efforts to improve user onboarding, I shipped an experiment to a subset of new users showing them a Getting Started page immediately after signup to help them get to what we think are some of the most important actions for new users to take. We compared the subset of users against a control group to see whether such an experience improved engagement over a period of time.</p>
-                    </div>
-
-                    <div class="col-md-5 order-md-first">
-                        <img class="rounded shadow-2" src="assets/img/preview/dribbble-6.png" alt="...">
-                    </div>
-                </div>
-
-                <hr class="my-8">
-
-                <div class="row gap-y align-items-center">
-                    <div class="col-md-6 mr-auto">
-                        <h4>Outdated comments toggling</h4>
-                        <p>Last week we shipped outdated comments...well, brought them back, actually. We used to show collapsed comments on outdated diffs as a single line, but removed that when we shipped code review recently. We brought that back last week with an improvement: you can now toggle open threads on outdated diffs in a review individually.</p>
-                    </div>
-                    
-                    <div class="col-md-5">
-                        <img class="rounded shadow-2" src="assets/img/preview/dribbble-7.png" alt="...">
-                    </div>
-                </div>
-
+                
+                <p class="text-center">
+                    <a class="btn btn-xl btn-round btn-info px-7" href="#">Read the documentation and download the code</a>
+                </p>
             </div>
         </section>
-      
-    <!-- Team -->
-    <div id="team" name="team">
-        <div class="container">
-            <h2 class="centered">Meet Our Team</h2>
-            <div class="row centered">
-                <hr>
-                    <div class="col-lg-4 centered">
-                        <img class="img img-circle" src="assets/img/team/buendia.png" height="120px" width="120px" alt="">
-                        <h4>Axel Buendia</h4>
-                        <p>CEO of Spirops, a French company  working in the artificial intelligence field for over 10 years.<br>
-                        <a href="https://www.linkedin.com/pub/axel-buendia/0/4b4/522" target="linkedin_buendia"><i class="fa fa-linkedin"></i></a>
-                        </p>
+
+        <!-- Newsletter inscription -->
+        <section class="section py-7" style="background-color: #8ea6e6">
+            <div class="container">
+                <div class="row gap-y align-items-center">
+                    <div class="col-md-9">
+                        <h4 class="mb-0 text-white text-center text-md-left">If you want to keep hearing from us...</h4>
                     </div>
-                    <div class="col-lg-4 centered">
-                        <img class="img img-circle" src="assets/img/team/blank.png" height="120px" width="120px" alt="">
-                        <h4>Confidential</h4>
-                        <p>Head of Business Development for a software firm that develops innovative products for over global asset managers.<br>
-                        </p>
+                    <div class="col-md-3 text-center text-md-right">
+                        <a class="btn btn-lg btn-round btn-light" href="http://eepurl.com/bEO3n5" target="emailing">Sign up for email updates</a>
                     </div>
-                    <div class="col-lg-4 centered">
-                        <img class="img img-circle" src="assets/img/team/goncalves.png" height="120px" width="120px" alt="">
-                        <h4>Juanito Gonçalves</h4>
-                        <p>CTO of Scub, a French software firm with over 10 years experience in software development including CRM systems for the European insurance industry.<br>
-                        <a href="https://www.linkedin.com/pub/juanito-goncalves/1/8a3/941" target="linkedin_gonclaves"><i class="fa fa-linkedin"></i></a>
-                        </p>
-                    </div>
-                    <div class="col-lg-4 centered">
-                        <img class="img img-circle" src="assets/img/team/lerch.png" height="120px" width="120px" alt="">
-                        <h4>Coline Lerch</h4>
-                        <p>Marketing project manager / Startup advisor.<br>
-                        <a href="https://www.linkedin.com/pub/coline-lerch/54/795/986" target="linkedin_lerch"><i class="fa fa-linkedin"></i></a>
-                        </p>
-                    </div>
-                    <div class="col-lg-4 centered">
-                        <img class="img img-circle" src="assets/img/team/blank.png" height="120px" width="120px" alt="">
-                        <h4>Confidential</h4>
-                        <p>In charge of fighting fraud for the french ministry of finance. ENA / Money Thesis.<br>
-                        </p>
-                    </div>
-                    <div class="col-lg-4 centered">
-                        <img class="img img-circle" src="assets/img/team/traumat.png" height="120px" width="120px" alt="">
-                        <h4>Stéphane Traumat</h4>
-                        <p>CEO of Scub, a French software firm with over 10 years experience in software development including CRM systems for the European insurance industry.<br>
-                        <a href="https://fr.linkedin.com/in/straumat" target="linkedin_traumat"><i class="fa fa-linkedin"></i></a>
-                        </p>
-                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
         
+        <!-- Team -->
+        <section class="section">
+            <div id="team" name="team">
+                <div class="container">
+
+                    <header class="section-header">
+                        <h2>Meet our team</h2>
+                    </header>
+
+                    <div class="row centered">
+                        <hr>
+                            <div class="col-lg-4 centered" align="center">
+                                <img class="img img-circle" src="assets/img/team/buendia.png" height="120px" width="120px" alt="">
+                                <h4>Axel Buendia</h4>
+                                <p>CEO of Spirops, a French company  working in the artificial intelligence field for over 10 years.<br>
+                                <a href="https://www.linkedin.com/pub/axel-buendia/0/4b4/522" target="linkedin_buendia"><i class="fa fa-linkedin"></i></a>
+                                </p>
+                            </div>
+                            <div class="col-lg-4 centered" align="center">
+                                <img class="img img-circle" src="assets/img/team/blank.png" height="120px" width="120px" alt="">
+                                <h4>Confidential</h4>
+                                <p>Head of Business Development for a software firm that develops innovative products for over global asset managers.<br>
+                                </p>
+                            </div>
+                            <div class="col-lg-4 centered" align="center">
+                                <img class="img img-circle" src="assets/img/team/goncalves.png" height="120px" width="120px" alt="">
+                                <h4>Juanito Gonçalves</h4>
+                                <p>CTO of Scub, a French software firm with over 10 years experience in software development including CRM systems for the European insurance industry.<br>
+                                <a href="https://www.linkedin.com/pub/juanito-goncalves/1/8a3/941" target="linkedin_gonclaves"><i class="fa fa-linkedin"></i></a>
+                                </p>
+                            </div>
+                            <div class="col-lg-4 centered" align="center">
+                                <img class="img img-circle" src="assets/img/team/lerch.png" height="120px" width="120px" alt="">
+                                <h4>Coline Lerch</h4>
+                                <p>Marketing project manager / Startup advisor.<br>
+                                <a href="https://www.linkedin.com/pub/coline-lerch/54/795/986" target="linkedin_lerch"><i class="fa fa-linkedin"></i></a>
+                                </p>
+                            </div>
+                            <div class="col-lg-4 centered" align="center">
+                                <img class="img img-circle" src="assets/img/team/blank.png" height="120px" width="120px" alt="">
+                                <h4>Confidential</h4>
+                                <p>In charge of fighting fraud for the french ministry of finance. ENA / Money Thesis.<br>
+                                </p>
+                            </div>
+                            <div class="col-lg-4 centered" align="center">
+                                <img class="img img-circle" src="assets/img/team/traumat.png" height="120px" width="120px" alt="">
+                                <h4>Stéphane Traumat</h4>
+                                <p>CEO of Scub, a French software firm with over 10 years experience in software development including CRM systems for the European insurance industry.<br>
+                                <a href="https://fr.linkedin.com/in/straumat" target="linkedin_traumat"><i class="fa fa-linkedin"></i></a>
+                                </p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- =============================================================================================================================== -->
     
