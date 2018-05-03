@@ -1,375 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
 
     <!-- Page configuration -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blockchain Inspector is a blockchain fraud detection solution.">
+    <meta name="description" content="Blockchain Inspector uses artificial intelligence to profile bitcoin users">
     <meta name="author" content="Blockchain Inspector">
-    <title>BlockchainInspector | Fight fraud and profile in the blockchain.</title>
+    <title>Blockchain Inspector | Using artificial intelligence to profile bitcoin users</title>    
 
-    <!-- Popup -->
-    <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" />
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="assets/css/main.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/animate-custom.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-    <script src="assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Styles -->
+    <link href="assets/css/page.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
 
-<body data-spy="scroll" data-offset="0" data-target="#navbar-main"> 
-
-	<img src="assets/img/logo-bci-small.png" class="hiddenpinimage" alt="Logo Blockchain Inspector">
+<body id="home">
 
     <!-- =============================================================================================================================== -->
     <!-- Menu -->
-    <div id="navbar-main"> 
-        <!-- Fixed navbar -->
-        <div class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                    <a class="navbar-brand" href="#home"><i class="fa fa-location-arrow"></i> Blockchain Inspector</a>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="smart">
+        <div class="container">
+
+            <!-- Logo & mobile button -->
+            <div class="navbar-left mr-4">
+                <button class="navbar-toggler" type="button">&#9776;</button>
+                <a class="navbar-brand" href="#home">
+                    <img class="logo-dark" src="assets/img/logo-bitcoin.png" alt="logo">
+                    <img class="logo-light" src="assets/img/logo-bitcoin.png" alt="logo">
+                </a>
+            </div>
+
+            <!-- Menu -->
+            <section class="navbar-mobile">
+                <nav class="nav nav-navbar mr-auto">
+                    <a class="nav-link active" href="#home">Home</a>
+                    <a class="nav-link" href="#howItWorks">How it works</a>
+                    <a class="nav-link" href="#proofOfConcept">Proof of concept</a>
+                    <a class="nav-link" href="#team">Team</a>
+                    <a class="nav-link" href="mailto:hello@blockchaininspector.com">Contact us</a>
+                </nav>
+
+                <!-- Allow persistent menu -->
+                <div class="d-none d-stick-block">&nbsp;</div>
+            </section>
+
+        </div>
+    </nav>
+    <!-- =============================================================================================================================== -->
+
+    <!-- =============================================================================================================================== -->
+    <!-- Header -->
+    <header class="header text-white h-fullscreen" style="background-color: #24292e">
+        <canvas class="constellation" data-color="rgba(255,255,255,0.3)"></canvas>
+        <div class="container">
+            <div class="row align-items-center h-100">
+
+                <!-- Left menu -->
+                <div class="col-md-5">
+                    <h1>Blockchain Inspector</h1>
+                    <p class="lead mt-5 mb-8">Thanks to our own ten-year-old Artificial Intelligence engine, we allow you to profile bitcoin users. The key advantage of our solution is that it can easily translates human reasoning into rules and in so doing can transpose the experience of experts into a computer system capable of processing very large amounts of data.</p>
+                    <a class="btn btn-round btn-light w-150 ml-3" href="#howItWorks">Learn more</a>
+                    <a class="btn btn-round btn-outline-light w-150" href="mailto:hello@blockchaininspector.com">Contact us</a>
                 </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#home" class="smoothScroll">Home</a></li>
-                        <li><a href="#learnMore" class="smoothScroll">Learn more</a></li>
-                        <li><a href="#features" class="smoothScroll">Features</a></li>
-                        <li><a href="#howItWorks" class="smoothScroll">Our solution</a></li>
-                        <li><a href="#team" class="smoothScroll">Team</a></li>
-                        <li><a href="#contact" class="smoothScroll">Contact</a></li>
-                    </ul>
+
+                <!-- Right image -->
+                <div class="col-md-6 ml-auto">
+                    <img src="assets/img/logo-bci-large.png" alt="img">
                 </div>
+
             </div>
         </div>
-    </div>
+    </header>
+    <!-- =============================================================================================================================== -->
 
     <!-- =============================================================================================================================== -->
-    <!-- Home -->
-    <div id="home" name="home">
-        <header class="clearfix">
-            <h1>Blockchain Inspector</h1>
-            <div class="col-md-8 col-lg-offset-2">
-            <p>Blockchain Inspector is a blockchain fraud detection solution</p>
-            <a href="#learnMore" class="smoothScroll btn btn-lg">Learn more</a>
-            </div>
-        </header>
-    </div>
+    <!-- Content -->
+    <main class="main-content">
 
-    <!-- =============================================================================================================================== -->
-    <!-- Learn more -->
-    <div id="learnMore" name="learnMore">
-        <div class="container">
-            <div class="row white">
-                <div class="col-md-6 col-lg-offset-3">
-                    <p>
-                    <h2 class="centered">What is Blockchain Inspector ?</h2>
-                    <hr>
-                    <div align="center">
-                    Thanks to our Artificial Intelligence tool, financial institutions, regulators and law enforcement can create rules to profile unknown blockchain users, track and respond to their behaviours.
-<br>
-                    <br>
-                    Our tool can help prevent identity theft, financial fraud, money laundering and terrorist financing. Financial services, Fintech and Institutional clients will be able to comply with Know Your Customer (KYC) and Anti Money Laundering (AML) regulations regardless of how they use the blockchain.<br>
-                    <br>
-                    The key advantage of our solution is that it allows for human reasoning to be integrated and in so doing can transpose the experience of experts into a computer system capable of processing very large amounts of data.<br>
-                    <br>
-                    <a href="http://eepurl.com/bEO3n5" class="btn btn-default btn-lg" target="mailing">Sign up for email updates</a>
-                    <br><br>
-                    <img src="assets/img/home/bci-logo.png" alt="logo Blockchain Inspector">
+        <!-- How it works -->
+        <section class="section">
+            <div class="container" id="howItWorks">
+                
+                <!-- =================================================================================================================== -->
+                <!-- Title -->
+                <header class="section-header">
+                    <h2>How it works</h2>
+                    <p class="lead">Our Artificial Intelligence is already used by the French railroad company (SNCF) to simulate crowds or by the French car maker Peugeot for its autonomous car</p>
+                </header>
+                <!-- =================================================================================================================== -->
+                
+                <!-- =================================================================================================================== -->
+                <!-- Blockchain2graph -->
+                <div class="row gap-y align-items-center">
+                    <div class="col-md-6 ml-auto">
+                        <h4>Extract Bitcoin data</h4>
+                        <p>Our first (open source) tool <a href="https://github.com/straumat/blockchain2graph" target="blockchain2graph">blockchain2graph</a> extracts transactions/addresses from a <a href="https://github.com/bitcoin/bitcoin" target="bitcoin-core">bitcoin core</a> server and stores them in a neo4j database.</p>
                     </div>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- =============================================================================================================================== -->
-    <!-- Features -->
-    <div id="features" name="features">
-        <div class="container">
-            <div class="row">
-                <h2 class="centered">Features</h2>
-                <hr>
-                <div class="col-lg-4 callout"> <i class="fa fa-user-secret fa-3x"></i>
-                    <h3>Profile unknown users</h3>
-                    <p>Blockchain Inspector allows you to create your own rules to profile unknown blockchain users.</p>
+                    <div class="col-md-5 order-md-first">
+                        <img class="rounded shadow-2" src="assets/img/screenshots/neo4j.png" alt="neo4j">
+                    </div>
                 </div>
-                <div class="col-lg-4 callout"> <i class="fa fa-exclamation-circle fa-3x"></i>
-                    <h3>Generate alerts</h3>
-                    <p>Blockchain Inspector allows you to create alerts on specific operations.</p>
-                </div>
-                <div class="col-lg-4 callout"> <i class="fa fa-exchange fa-3x"></i>
-                    <h3>Data exchange</h3>
-                    <p>Blockchain Inspector allows you to automatically exchange data on users.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+                <!-- =================================================================================================================== -->
 
-    <!-- =============================================================================================================================== -->
-    <!-- How it works -->    
-    <div id="howItWorks" name="howItWorks">
-        <div class="container">
-            <div class="row">
-                <h2 class="centered">Our solution</h2>
-                <hr>
-                <div class="col-lg-8 col-lg-offset-2 centered">
-                    <p class="large">
-                    We are providing a powerful graphical artificial intelligence tool to let anyone create user defined rules so they can respond more quickly to threats, new noteworthy behaviours and new regulations.<br><br>
-                    The system is based on traditional statistical analysis tools, but above all it allows for human reasoning to be integrated and in so doing can transpose the experience of experts into a computer system capable of processing very large amounts of data.<br>
-                    </p>
-                </div>
-            </div>
-            <!-- Screen captures -->
-            <div class="container">
-                <div class="row"> 
+                <hr class="my-8">
+
+                <!-- =================================================================================================================== -->
+                <!-- Rules creation -->
+                <div class="row gap-y align-items-center">
+                    <div class="col-md-6 mr-auto">
+                        <h4>Create rules</h4>
+                        <p>Each rule can be created individually and enables the step-by-step creation of a complex analysis system. The system uses fuzzy logic to handle the concept of partial truth, where the truth value may range between completely true and completely false.</p>
+                    </div>
                     
-                    <!-- Screen capture 1 -->
-                    <div class="col-md-4 ">
-                        <div class="grid mask">
-                            <figure> <img class="img-responsive" src="assets/img/portfolio/entity_detail.png" alt="">
-                                <figcaption>
-                                    <h5>Entity view</h5>
-                                    <a data-toggle="modal" href="#sc1" class="btn btn-default">More Details</a>
-                                </figcaption>
-                            </figure>
-                        </div>
+                    <div class="col-md-5">
+                        <img class="rounded shadow-2" src="assets/img/screenshots/ia-studio.png" alt="ia studio">
                     </div>
-                    <div class="modal fade" id="sc1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                    <h4 class="modal-title">Entity view</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p><img class="img-responsive" src="assets/img/portfolio/entity_detail.png" alt=""></p>
-                                    <p>In this screen, you can see a facebook like life stream of an entity. One blue rule has been executed and has set a belief on the own of an address. One red alert has been raised because it seems this entity made a money transfer to a country under embargo.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+                <!-- =================================================================================================================== -->
+                
+                <hr class="my-8">
+                
+                <!-- =================================================================================================================== -->
+                <!-- Visualisation -->
+                <div class="row gap-y align-items-center">
+                    <div class="col-md-6 ml-auto">
+                        <h4>View data</h4>
+                        <p>Our user interface (work in progress) allows you to search for peoples, companies, bitcoin addresses and transactions too see what data you have and what the Artificial Intelligence has added</p>
                     </div>
 
-                    <!-- Screen capture 2 -->
-                    <div class="col-md-4 ">
-                        <div class="grid mask">
-                            <figure> <img class="img-responsive" src="assets/img/portfolio/address_detail.png" alt="">
-                                <figcaption>
-                                    <h5>Address view</h5>
-                                    <a data-toggle="modal" href="#sc2" class="btn btn-default">More Details</a>
-                                </figcaption>
-                            </figure>
-                        </div>
+                    <div class="col-md-5 order-md-first">
+                        <img class="rounded shadow-2" src="assets/img/screenshots/address_detail.png" alt="neo4j">
                     </div>
-                    <div class="modal fade" id="sc2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                    <h4 class="modal-title">Address view</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p><img class="img-responsive" src="assets/img/portfolio/address_detail.png" alt=""></p>
-                                    <p>In this screen, we searched for an unknown address. Two AI rules has set two differents beliefs on the owner's country.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+                <!-- =================================================================================================================== -->
+                
+            </div>
+        </section>
 
-                    <!-- Screen capture 3 -->
-                    <div class="col-md-4 ">
-                        <div class="grid mask">
-                            <figure> <img class="img-responsive" src="assets/img/portfolio/ia_studio.png" alt="">
-                                <figcaption>
-                                    <h5>Rules creation</h5>
-                                    <a data-toggle="modal" href="#sc3" class="btn btn-default">More Details</a>
-                                </figcaption>
-                            </figure>
-                        </div>
+        <!-- =========================================================================================================================== -->
+        <!-- Newsletter inscription -->
+        <section class="section py-7" style="background-color: #8ea6e6">
+            <div class="container">
+                <div class="row gap-y align-items-center">
+                    <div class="col-md-9">
+                        <h4 class="mb-0 text-white text-center text-md-left">If you want to keep hearing from us...</h4>
                     </div>
-                    <div class="modal fade" id="sc3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                    <h4 class="modal-title">Rules creation</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p><img class="img-responsive" src="assets/img/portfolio/ia_studio.png" alt=""></p>
-                                    <p>This a simple example of a Drive: if the transaction involves two addresses from the same country, I increase the likelihood for both addresses belonging to that country. It will probably be modified, for example we might add a rule about reliability that the transaction is a local transaction (one of the owners is a corporation whose business is a local business).</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-md-3 text-center text-md-right">
+                        <a class="btn btn-lg btn-round btn-light" href="http://eepurl.com/bEO3n5" target="emailing">Sign up for email updates</a>
                     </div>
-
                 </div>
             </div>
-            <!-- Screen captures end -->
-        </div>
-    </div>    
-    <!-- =============================================================================================================================== -->
+        </section>
+        <!-- =========================================================================================================================== -->
 
-    <!-- =============================================================================================================================== -->
-    <!-- ==== Team ==== -->
-    <div id="team" name="team">
-        <div class="container">
-            <div class="row centered">
-                <h2 class="centered">Meet Our Team</h2>
-                <hr>
-                    <div class="col-lg-4 centered">
-                        <img class="img img-circle" src="assets/img/team/buendia.png" height="120px" width="120px" alt="">
-                        <h4>Axel Buendia</h4>
-                        <p>CEO of Spirops, a French company  working in the artificial intelligence field for over 10 years.<br>
-                        <a href="https://www.linkedin.com/pub/axel-buendia/0/4b4/522" target="linkedin_buendia"><i class="fa fa-linkedin"></i></a>
-                        </p>
-                    </div>
-                    <div class="col-lg-4 centered">
-                        <img class="img img-circle" src="assets/img/team/blank.png" height="120px" width="120px" alt="">
-                        <h4>Confidential</h4>
-                        <p>Head of Business Development for a software firm that develops innovative products for over global asset managers.<br>
-                        </p>
-                    </div>
-                    <div class="col-lg-4 centered">
-                        <img class="img img-circle" src="assets/img/team/goncalves.png" height="120px" width="120px" alt="">
-                        <h4>Juanito Gonçalves</h4>
-                        <p>CTO of Scub, a French software firm with over 10 years experience in software development including CRM systems for the European insurance industry.<br>
-                        <a href="https://www.linkedin.com/pub/juanito-goncalves/1/8a3/941" target="linkedin_gonclaves"><i class="fa fa-linkedin"></i></a>
-                        </p>
-                    </div>
-                    <div class="col-lg-4 centered">
-                        <img class="img img-circle" src="assets/img/team/lerch.png" height="120px" width="120px" alt="">
-                        <h4>Coline Lerch</h4>
-                        <p>Marketing project manager / Startup advisor.<br>
-                        <a href="https://www.linkedin.com/pub/coline-lerch/54/795/986" target="linkedin_lerch"><i class="fa fa-linkedin"></i></a>
-                        </p>
-                    </div>
-                    <div class="col-lg-4 centered">
-                        <img class="img img-circle" src="assets/img/team/blank.png" height="120px" width="120px" alt="">
-                        <h4>Confidential</h4>
-                        <p>In charge of fighting fraud for the french ministry of finance. ENA / Money Thesis.<br>
-                        </p>
-                    </div>
-                    <div class="col-lg-4 centered">
-                        <img class="img img-circle" src="assets/img/team/traumat.png" height="120px" width="120px" alt="">
-                        <h4>Stéphane Traumat</h4>
-                        <p>CEO of Scub, a French software firm with over 10 years experience in software development including CRM systems for the European insurance industry.<br>
-                        <a href="https://fr.linkedin.com/in/straumat" target="linkedin_traumat"><i class="fa fa-linkedin"></i></a>
-                        </p>
-                    </div>
+        <!-- =========================================================================================================================== -->
+        <!-- Proof of concept -->
+        <section class="section bg-gray" id="proofOfConcept">
+            <div class="container">
+                <header class="section-header">
+                    <h2><strong>Proof of concept</strong></h2>
+                    <p class="lead-2">We released a technical proof of concept : it contains a neo4j database with 70 000 blocks, blockchain2graph, our Artificial Intelligence engine and some rules written in C++ (no GUI).<br>Feel free to learn and try !</p>
+                </header>
+                
+                <p class="text-center">
+                    <a class="btn btn-xl btn-round btn-info px-7" href="https://medium.com/@bci_corporate/profiling-bitcoin-users-with-artificial-intelligence-our-proof-of-concept-33c3ad08884">Read the documentation, download the code and run it !</a>
+                </p>
             </div>
-        </div>
-    </div>
+        </section>
+        <!-- =========================================================================================================================== -->
 
-    <!-- =============================================================================================================================== -->
-    <!-- Contact -->
-    <div id="contact" name="contact">
-        <div class="container">
-            <div class="row">
-                <h2 class="centered">Contact Us</h2>
-                <hr>
-                <div class="col-lg-2 col-lg-offset-1 text-center"> <i class="fa fa-phone fa-2x"></i>
-                    <p><a href="tel:+33677689685">Phone</a></p>
-                </div>
-                <div class="col-lg-2 text-center"> <i class="fa fa-envelope-o fa-2x"></i>
-                    <p><a href="mailto:hello@blockchaininspector.com">Email</a></p>
-                </div>
-                <div class="col-lg-2 text-center"> <i class="fa fa-twitter fa-2x"></i>
-                    <p><a href="https://www.twitter.com/bci_corporate" target="twitter">Twitter</a></p>
-                </div>
-                <div class="col-lg-2 text-center"> <i class="fa fa-medium fa-2x"></i>
-                    <p><a href="https://medium.com/@bci_corporate" target="medium">Blog</a></p>
-                </div>
-                <div class="col-lg-2 text-center"> <i class="fa fa-map-marker fa-2x"></i>
-                    <p><a href="https://www.google.fr/maps/place/Scub/@45.6531234,0.1518002,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0xe90b02dfd66baaa2" target="maps">Address</a></p>
+        <!-- =========================================================================================================================== -->
+        <!-- Newsletter inscription -->
+        <section class="section py-7" style="background-color: #8ea6e6">
+            <div class="container">
+                <div class="row gap-y align-items-center">
+                    <div class="col-md-9">
+                        <h4 class="mb-0 text-white text-center text-md-left">If you want to keep hearing from us...</h4>
+                    </div>
+                    <div class="col-md-3 text-center text-md-right">
+                        <a class="btn btn-lg btn-round btn-light" href="http://eepurl.com/bEO3n5" target="emailing">Sign up for email updates</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-        
+        </section>
+        <!-- =========================================================================================================================== -->
+
+        <!-- =========================================================================================================================== -->
+        <!-- Team -->
+        <section class="section" id="team">
+            <div>
+                <div class="container">
+
+                    <header class="section-header">
+                        <h2>Meet our team</h2>
+                    </header>
+
+                    <div class="row centered">
+                        <hr>
+                            <div class="col-lg-4 centered" align="center">
+                                <img class="img img-circle" src="assets/img/team/buendia.png" height="120px" width="120px" alt="">
+                                <h4>Axel Buendia</h4>
+                                <p>CEO of Spirops, a French company  working in the artificial intelligence field for over 10 years.<br>
+                                <a href="https://www.linkedin.com/pub/axel-buendia/0/4b4/522" target="linkedin_buendia"><i class="fa fa-linkedin"></i></a>
+                                </p>
+                            </div>
+                            <div class="col-lg-4 centered" align="center">
+                                <img class="img img-circle" src="assets/img/team/blank.png" height="120px" width="120px" alt="">
+                                <h4>Confidential</h4>
+                                <p>Head of Business Development for a software firm that develops innovative products for over global asset managers.<br>
+                                </p>
+                            </div>
+                            <div class="col-lg-4 centered" align="center">
+                                <img class="img img-circle" src="assets/img/team/goncalves.png" height="120px" width="120px" alt="">
+                                <h4>Juanito Gonçalves</h4>
+                                <p>CTO of Scub, a French software firm with over 10 years experience in software development including CRM systems for the European insurance industry.<br>
+                                <a href="https://www.linkedin.com/pub/juanito-goncalves/1/8a3/941" target="linkedin_gonclaves"><i class="fa fa-linkedin"></i></a>
+                                </p>
+                            </div>
+                            <div class="col-lg-4 centered" align="center">
+                                <img class="img img-circle" src="assets/img/team/lerch.png" height="120px" width="120px" alt="">
+                                <h4>Coline Lerch</h4>
+                                <p>Marketing project manager / Startup advisor.<br>
+                                <a href="https://www.linkedin.com/pub/coline-lerch/54/795/986" target="linkedin_lerch"><i class="fa fa-linkedin"></i></a>
+                                </p>
+                            </div>
+                            <div class="col-lg-4 centered" align="center">
+                                <img class="img img-circle" src="assets/img/team/blank.png" height="120px" width="120px" alt="">
+                                <h4>Confidential</h4>
+                                <p>In charge of fighting fraud for the french ministry of finance. ENA / Money Thesis.<br>
+                                </p>
+                            </div>
+                            <div class="col-lg-4 centered" align="center">
+                                <img class="img img-circle" src="assets/img/team/traumat.png" height="120px" width="120px" alt="">
+                                <h4>Stéphane Traumat</h4>
+                                <p>CEO of Scub, a French software firm with over 10 years experience in software development including CRM systems for the European insurance industry.<br>
+                                <a href="https://fr.linkedin.com/in/straumat" target="linkedin_traumat"><i class="fa fa-linkedin"></i></a>
+                                </p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- =============================================================================================================================== -->
+    
     <!-- =============================================================================================================================== -->
     <!-- Footer -->
-    <div id="footerwrap">
+    <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <span class="copyright">Copyright &copy; 2015 Ascend.</div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="https://twitter.com/bci_corporate"><i class="fa fa-twitter"></i></a> </li>
-                    </ul>
+            <div class="row gap-y align-items-center">
+                
+                <div class="col-md-1 text-center text-md-left">
+                    <a href="https://twitter.com/bci_corporate" target="twitter"><img src="assets/img/twitter-logo-transparent-small.png" alt="logo"></a>
                 </div>
+
+                <div class="col-md-6">
+                    <div class="nav nav-center">
+                        <a href="http://www.scub.net" target="scub"><img src="assets/img/logos/logo_scub.jpg"/></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="http://www.spirops.com/" target="spirops"><img src="assets/img/logos/logo_spirops.png"/></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="http://www.laregion-alpc.fr" target="Région nouvelle aquitaine"><img src="assets/img/logos/logo_nouvelle_aquitaine.jpg"/></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.ovh.com/fr/dlp/" target="ovh dlp"><img src="assets/img/logos/logo_ovh.jpg"/></a>
+                    </div>
+                </div>
+
+                <div class="col-md-5 text-center text-md-right">
+                    <small>Avec le concours financier de la Région NouvelleAquitaine<br>© 2018. All rights reserved.</small>
+                </div>
+
             </div>
         </div>
-    </div>
-
+    </footer>
     <!-- =============================================================================================================================== -->
-    <!-- Librairies -->
-    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script> 
-    <script type="text/javascript" src="assets/js/retina.js"></script> 
-    <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script> 
-    <script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
-    <script type="text/javascript" src="assets/js/jquery-func.js"></script>
+    
+    <!-- =============================================================================================================================== -->
+    <!-- Scripts -->
+    <script src="assets/js/page.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <!-- =============================================================================================================================== -->
 
-    <!-- Popup -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-    <script>
-    toastr.options = {
-      "closeButton": true,
-      "debug": false,
-      "newestOnTop": true,
-      "progressBar": true,
-      "positionClass": "toast-bottom-right",
-      "preventDuplicates": false,
-      "onclick": null,
-      "showDuration": "300",
-      "hideDuration": "1000",
-      "timeOut": "30000",
-      "extendedTimeOut": "1000",
-      "showEasing": "swing",
-      "hideEasing": "linear",
-      "showMethod": "fadeIn",
-      "hideMethod": "fadeOut"
-    }
-	toastr["info"]('<a href="https://medium.com/@bci_corporate/blockchain-inspector-partners-with-uk-bitcoin-marketplace-177a47a18e56#" target="bci_first_partnership">Blockchain Inspector partners with UK Bitcoin marketplace<a>', '<b>First partnership signed !</b>');
-    </script>
-
-    <!-- Google analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-63584249-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-</body>
-
+    </body>
 </html>
